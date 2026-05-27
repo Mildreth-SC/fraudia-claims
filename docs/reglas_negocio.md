@@ -1,0 +1,29 @@
+# Reglas de Negocio — Sistema de Alertas
+
+## Score de Riesgo
+El score va de 0 a 100. Se calcula sumando los puntos de cada señal detectada.
+
+| Rango | Nivel | Acción |
+|-------|-------|--------|
+| 0 - 39 | 🟢 VERDE | Flujo normal |
+| 20 - 39 | 🟡 AMARILLO | Revisión documental |
+| 40+ | 🔴 ROJO | Revisión especializada de campo |
+
+## Señales y Puntuación
+
+| Código | Señal | Puntos |
+|--------|-------|--------|
+| RF-01 | Siniestro ≤ 10 días desde inicio póliza | 8 pts |
+| RF-01b | Siniestro 11-30 días desde inicio póliza | 4 pts |
+| RF-02 | Reporte tardío > 7 días | 5 pts |
+| RF-02b | Reporte tardío 4-7 días | 3 pts |
+| RF-03 | Asegurado con ≥ 3 siniestros en 18 meses | 8 pts |
+| RF-03b | Asegurado con 2 siniestros en 18 meses | 4 pts |
+| RF-04 | Documentos incompletos | 4 pts |
+| RF-05 | Proveedor en lista restrictiva | 10 pts |
+| RF-06 | Monto reclamado ≥ 95% suma asegurada | 5 pts |
+| RF-07 | Robo reportado con > 48 horas de demora | 8 pts |
+
+## Reglas Críticas Automáticas
+- **RF-01 + RF-05 + RF-07 juntas** → clasificación ROJO inmediata
+- **Proveedor en lista restrictiva** → siempre escala a revisión
