@@ -4,7 +4,7 @@ import { FraudiaHeader } from "@/components/fraudia/Header";
 import { MetricsCards } from "@/components/fraudia/MetricsCards";
 import { CasesTable } from "@/components/fraudia/CasesTable";
 import { AiAgent } from "@/components/fraudia/AiAgent";
-import { ChartsGrid } from "@/components/fraudia/ChartsGrid";
+import { Charts } from "@/components/fraudia/Charts";
 import { ProveedoresTable } from "@/components/fraudia/ProveedoresTable";
 import { DownloadActions } from "@/components/fraudia/DownloadActions";
 import { LoadingSpinner, ErrorState } from "@/components/fraudia/LoadingState";
@@ -120,8 +120,6 @@ function Index() {
     navigate({ to: "/login" });
   };
 
-  const charts = useMemo(() => deriveCharts(cases, proveedores), [cases, proveedores]);
-
   const renderBody = () => {
     if (loading) return <LoadingSpinner label="Cargando datos desde el servidor..." />;
     if (error) return <ErrorState message={error} onRetry={load} />;
@@ -131,12 +129,7 @@ function Index() {
       return (
         <>
           <MetricsCards metrics={metrics} />
-          <ChartsGrid
-            distribucionRiesgo={charts.dist}
-            scorePorRamo={charts.scorePorRamo}
-            topProveedores={charts.topProveedores}
-            alertasPorCiudad={charts.alertasPorCiudad}
-          />
+          <Charts />
           <CasesTable cases={cases.slice(0, 10)} />
         </>
       );
@@ -153,12 +146,7 @@ function Index() {
       return (
         <>
           <ProveedoresTable proveedores={proveedores} />
-          <ChartsGrid
-            distribucionRiesgo={charts.dist}
-            scorePorRamo={charts.scorePorRamo}
-            topProveedores={charts.topProveedores}
-            alertasPorCiudad={charts.alertasPorCiudad}
-          />
+          <Charts />
         </>
       );
     }
