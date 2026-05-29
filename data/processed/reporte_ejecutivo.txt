@@ -5,24 +5,29 @@
 ╚══════════════════════════════════════════════════════════╝
 
 RESUMEN GENERAL:
-  Total siniestros analizados: 500
-  Casos ROJOS (revisión urgente):     0 (0.0%)
-  Casos AMARILLOS (revisión doc.):    0 (0.0%)
-  Casos VERDES (flujo normal):        500 (100.0%)
-
-  Score promedio: 8.0
-  Anomalías ML detectadas: 0
+  Total siniestros analizados: 1000
+  🔴 Casos ROJOS (revisión urgente):     227 (22.7%)
+  🟡 Casos AMARILLOS (revisión doc.):    439 (43.9%)
+  🟢 Casos VERDES (flujo normal):        334 (33.4%)
+  
+  Score promedio: 31.0
+  Anomalías ML detectadas: 150
 
 TOP 5 CASOS PRIORITARIOS:
 
-  11; | Score: 17 | VERDE | 11; | $5,000.00
-  14; | Score: 17 | VERDE | 14; | $5,000.00
-  14; | Score: 17 | VERDE | 14; | $5,000.00
-  14; | Score: 17 | VERDE | 14; | $5,000.00
-  11; | Score: 17 | VERDE | 11; | $5,000.00
+  SIN-00019 | Score: 74 | ROJO | Generales | $40,864.66
+  SIN-00044 | Score: 74 | ROJO | Vehiculos | $8,010.87
+  SIN-00143 | Score: 74 | ROJO | Hogar | $46,232.90
+  SIN-00172 | Score: 74 | ROJO | Vehiculos | $35,778.14
+  SIN-00175 | Score: 74 | ROJO | Vehiculos | $42,900.05
 
 PROVEEDORES CON MÁS ALERTAS ROJAS:
 
+  Grua Rapida: 79 casos rojos
+  Clinica San Marcos: 74 casos rojos
+  Taller El Veloz: 68 casos rojos
+  Peritajes Express: 2 casos rojos
+  Clinica del Sur: 1 casos rojos
 
 NOTA ÉTICA: Este reporte es una herramienta de apoyo para analistas.
 Ningún caso debe ser rechazado automáticamente sin revisión humana.

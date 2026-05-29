@@ -1,213 +1,118 @@
----
+# FraudIA — Detector de posibles fraudes en siniestros
 
-## Instalación y Ejecución
+Prototipo funcional para **hackIAthon 2026 — Reto Aseguradora del Sur**.
 
-### Requisitos
-- Python 3.12+
-- R 4.6+
-- Cuenta Supabase
-- API Key Groq (gratuita)
+Sistema híbrido: **reglas de negocio** + **detección de anomalías (ML)** + **agente conversacional (Groq)** + **dashboard web**.
 
-### 1. Clonar repositorio
-```bash
-git clone https://github.com/tu-usuario/fraudia-claims.git
-cd fraudia-claims
+> La solución genera **alertas de revisión**, no acusaciones automáticas de fraude.
+
+## Estructura del repositorio
+
 ```
-
-### 2. Instalar dependencias Python
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Instalar dependencias R
-```bash
-Rscript -e "renv::restore()"
-```
-
-### 4. Configurar variables de entorno
-```bash
-cp .env.example .env
-# Editar .env con tus credenciales
-```
-
-### 5. Generar dataset sintético
-```bash
-py -3.12 src/ingestion/load_data.py
-```
-
-### 6. Subir datos a Supabase
-```bash
-py -3.12 subir_supabase.py
-```
-
-### 7. Calcular scores
-```bash
-py -3.12 src/rules/fraud_rules.py
-```
-
-### 8. Generar gráficos R
-```bash
-Rscript src/features/graficos.R
-```
-
-### 9. Iniciar agente IA
-```bash
-py -3.12 src/ai_agent/claims_agent.py
-```
-
-### 10. Iniciar dashboard
-```bash
-py -3.12 src/app/main.py
-```
-
----
-
-## Casos de Uso
-
-| Código | Caso | Descripción |
-|--------|------|-------------|
-| CU-01 | Cargar siniestros | Sistema valida estructura y procesa información |
-| CU-02 | Calcular score | Cada siniestro recibe score 0-100 |
-| CU-03 | Priorizar casos | Analista ve casos ordenados por riesgo |
-| CU-04 | Explicar alerta | Sistema muestra factores de riesgo detectados |
-| CU-05 | Consultar IA | Usuario obtiene respuestas en lenguaje natural |
-| CU-06 | Generar reporte | Resumen ejecutivo de casos críticos |
-
----
-
-## Score de Riesgo
-
-| Rango | Nivel | Acción |
-|-------|-------|--------|
-| 0 - 19 | 🟢 VERDE | Flujo normal |
-| 20 - 39 | 🟡 AMARILLO | Revisión documental |
-| 40+ | 🔴 ROJO | Revisión especializada de campo |
-
----
-
-## Principio Ético Clave
-> La solución genera **alertas de revisión**, no acusaciones automáticas de fraude. Toda decisión final requiere revisión humana especializada.
-
----
-
-## Equipo
-hackIAthon 2026 — Reto Aseguradora del Sur
-fraudia-claims/
+Reto_aseguradora/
 ├── README.md
 ├── requirements.txt
-├── renv.lock
 ├── .env.example
+├── INICIAR_DEMO.bat          # Demo local rapida (Windows)
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── synthetic/
+│   ├── synthetic/            # Dataset generado
+│   └── processed/            # Scores y reportes
+├── docs/                     # Documentacion del reto (ver docs/README.md)
+├── frontend/                 # React + Vite + TypeScript
 ├── src/
-│   ├── ingestion/load_data.py
-│   ├── features/graficos.R
-│   ├── rules/fraud_rules.py
-│   ├── ai_agent/claims_agent.py
-│   └── app/main.py
-├── docs/
-│   ├── arquitectura.md
-│   ├── modelo_datos.md
-│   ├── reglas_negocio.md
-│   ├── uso_ia.md
-│   └── limitaciones.md
-├── tests/
-│   └── test_rules.py
-└── presentation/
-└── pitch.pdf
- ---
-
-## Instalación y Ejecución
-
-### Requisitos
-- Python 3.12+
-- R 4.6+
-- Cuenta Supabase
-- API Key Groq (gratuita)
-
-### 1. Clonar repositorio
-```bash
-git clone https://github.com/tu-usuario/fraudia-claims.git
-cd fraudia-claims
+│   ├── app/                  # FastAPI (main.py, main_local_test.py)
+│   ├── ingestion/            # Carga CSV y Supabase
+│   ├── rules/                # Motor de reglas RF
+│   ├── models/               # Isolation Forest
+│   ├── explainability/       # Explicaciones y reporte
+│   ├── analysis/             # Pipeline R (data_cleaner.R)
+│   ├── features/             # Graficos R (ggplot2)
+│   └── ai_agent/             # Agente CLI Groq
+└── tests/
 ```
 
-### 2. Instalar dependencias Python
-```bash
-pip install -r requirements.txt
+## Para arrancar cada sesion
+
+```powershell
+# Terminal 1 — Backend (Python 3.12)
+& "C:\Users\guano\AppData\Local\Programs\Python\Python312\python.exe" src/app/main_local_test.py
+
+# Terminal 2 — Frontend
+cd frontend
+npm run dev
 ```
 
-### 3. Instalar dependencias R
-```bash
-Rscript -e "renv::restore()"
+Abrir http://localhost:3000 — Login: `jurado@hackiathon.com` / `Demo2026`
+
+## Dataset real (500 siniestros del reto)
+
+1. Copiar Excel/CSV a `data/raw/` (ver `data/raw/README.md`)
+2. Ejecutar schema en Supabase: `src/ingestion/schema_real_dataset.sql`
+3. Migrar:
+
+```powershell
+python src/ingestion/migrar_dataset_real.py
+python src/ingestion/migrar_dataset_real.py --upload
 ```
 
-### 4. Configurar variables de entorno
-```bash
-cp .env.example .env
-# Editar .env con tus credenciales
+El backend local usa automaticamente `data/processed/real/` si existe.
+
+## Demo local (desarrollo)
+
+**Requisitos:** Python 3.12+, Node.js 18+
+
+```powershell
+# 1. Datos (si aun no existen)
+python src/ingestion/load_data.py
+
+# 2. Backend API (puerto 8000)
+python src/app/main_local_test.py
+
+# 3. Frontend (puerto 3000)
+cd frontend
+npm install
+npm run dev
 ```
 
-### 5. Generar dataset sintético
-```bash
-py -3.12 src/ingestion/load_data.py
+O ejecutar `INICIAR_DEMO.bat` en la raiz.
+
+**Login demo:** `jurado@hackiathon.com` / `Demo2026`
+
+**Chat con IA:** cree `.env` en la raiz con `GROQ_API_KEY=...` (gratis en console.groq.com).
+
+Configuracion API en `frontend/.env.local`:
+
+```
+VITE_API_BASE=http://127.0.0.1:8000
 ```
 
-### 6. Subir datos a Supabase
-```bash
-py -3.12 subir_supabase.py
-```
+## Modo completo (Supabase + Groq + R)
 
-### 7. Calcular scores
-```bash
-py -3.12 src/rules/fraud_rules.py
-```
+1. Copiar `.env.example` a `.env` y completar credenciales.
+2. `python src/ingestion/subir_supabase.py`
+3. `python src/rules/fraud_rules.py`
+4. `uvicorn src.app.main:app --host 127.0.0.1 --port 8000`
 
-### 8. Generar gráficos R
-```bash
-Rscript src/features/graficos.R
-```
+## Documentacion
 
-### 9. Iniciar agente IA
-```bash
-py -3.12 src/ai_agent/claims_agent.py
-```
+| Documento | Descripcion |
+|-----------|-------------|
+| [docs/arquitectura.md](docs/arquitectura.md) | Capas y stack |
+| [docs/modelo_datos.md](docs/modelo_datos.md) | Tablas y campos |
+| [docs/reglas_negocio.md](docs/reglas_negocio.md) | Alertas y score |
+| [docs/uso_ia.md](docs/uso_ia.md) | ML y agente IA |
+| [docs/limitaciones.md](docs/limitaciones.md) | Etica y alcance |
+| [docs/guion_demo.md](docs/guion_demo.md) | Guion presentacion 10 min |
+| [docs/checklist_evento.md](docs/checklist_evento.md) | Checklist pre-evento |
 
-### 10. Iniciar dashboard
-```bash
-py -3.12 src/app/main.py
-```
+## Score de riesgo (implementacion actual)
 
----
-
-## Casos de Uso
-
-| Código | Caso | Descripción |
-|--------|------|-------------|
-| CU-01 | Cargar siniestros | Sistema valida estructura y procesa información |
-| CU-02 | Calcular score | Cada siniestro recibe score 0-100 |
-| CU-03 | Priorizar casos | Analista ve casos ordenados por riesgo |
-| CU-04 | Explicar alerta | Sistema muestra factores de riesgo detectados |
-| CU-05 | Consultar IA | Usuario obtiene respuestas en lenguaje natural |
-| CU-06 | Generar reporte | Resumen ejecutivo de casos críticos |
-
----
-
-## Score de Riesgo
-
-| Rango | Nivel | Acción |
-|-------|-------|--------|
-| 0 - 19 | 🟢 VERDE | Flujo normal |
-| 20 - 39 | 🟡 AMARILLO | Revisión documental |
-| 40+ | 🔴 ROJO | Revisión especializada de campo |
-
----
-
-## Principio Ético Clave
-> La solución genera **alertas de revisión**, no acusaciones automáticas de fraude. Toda decisión final requiere revisión humana especializada.
-
----
+| Rango | Nivel | Accion sugerida |
+|-------|-------|-----------------|
+| 0 - 19 | Verde | Flujo normal |
+| 20 - 39 | Amarillo | Revision documental |
+| 40+ | Rojo | Revision especializada |
 
 ## Equipo
-hackIAthon 2026 — Reto Aseguradora del Sur
+
+hackIAthon 2026 — Aseguradora del Sur

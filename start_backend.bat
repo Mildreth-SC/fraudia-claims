@@ -28,7 +28,7 @@ REM Instalar si falta FastAPI
 "%PYTHON%" -c "import fastapi" >nul 2>&1
 if errorlevel 1 (
     echo Instalando dependencias faltantes...
-    "%PYTHON%" -m pip install fastapi uvicorn python-multipart pandas scikit-learn groq python-dotenv supabase-py --quiet
+    "%PYTHON%" -m pip install fastapi uvicorn python-multipart pandas scikit-learn groq python-dotenv supabase --quiet
 )
 
 echo.

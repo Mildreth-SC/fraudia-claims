@@ -1,0 +1,28 @@
+============================================================
+REPORTE DE LIMPIEZA DE DATOS - FraudIA
+============================================================
+
+MAPEO DE COLUMNAS DETECTADAS:
+------------------------------------------------------------
+  • ID Siniestro: id
+  • Monto Reclamado: amount
+  • Días Vigencia: days_from_policy
+  • Reporte Tardío: days_to_report
+  • Historial Asegurado: history
+  • Documentos: documents_complete
+  • Proveedor: provider
+  • Suma Asegurada: sum_insured
+  • Cobertura: coverage
+  • Ciudad: city
+  • Ramo: NO DETECTADA
+
+RESUMEN DE LIMPIEZA:
+------------------------------------------------------------
+  • Registros procesados: 8
+  • Valores faltantes detectados: 0
+  • Tipos de datos convertidos: Numérico, Booleano, Fecha, Texto
+
+CALIDAD DE DATOS RESULTANTE:
+------------------------------------------------------------
+  • Score de completitud: 100 %
+  • Registros válidos para análisis: 8

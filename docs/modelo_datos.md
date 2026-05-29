@@ -20,6 +20,21 @@
 | dias_desde_inicio_poliza | integer | Días entre inicio póliza y siniestro |
 | etiqueta_fraude_simulada | integer | 0/1 para entrenamiento |
 
+### vehiculos
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| id_vehiculo | text PK | Identificador único |
+| id_siniestro | text FK | Siniestro asociado (1:1 en datos sintéticos) |
+| placa | text | Placa del vehículo |
+| chasis | text | Número de chasis |
+| motor | text | Número de motor |
+| marca | text | Marca del vehículo |
+| modelo | text | Modelo |
+| anio | integer | Año del vehículo |
+
+Script SQL: `src/ingestion/schema_vehiculos.sql`  
+Datos: `data/synthetic/vehiculos.csv` (generado con `load_data.py`)
+
 ### polizas
 | Campo | Tipo | Descripción |
 |-------|------|-------------|
@@ -52,3 +67,13 @@
 | id_documento | text PK | Identificador único |
 | id_siniestro | text FK | Referencia a siniestro |
 | inconsistencia_detectada | boolean | Alerta de inconsistencia |
+
+## Campos derivados (pipeline)
+| Campo | Origen |
+|-------|--------|
+| placa | Join con `vehiculos` |
+| frecuencia_placa | Conteo de siniestros por placa |
+| frecuencia_conductor | Siniestros vehiculares por `id_asegurado` |
+| marca_vehiculo, modelo_vehiculo, anio_vehiculo | Join con `vehiculos` |
+| doc_inconsistente | Agregado de `documentos` |
+| similitud_narrativa | TF-IDF entre descripciones |

@@ -1,0 +1,9 @@
+id_siniestro,monto_reclamado,dias_desde_inicio_poliza,dias_entre_ocurrencia_reporte,historial_siniestros_asegurado,documentos_completos,id_proveedor,suma_asegurada,cobertura,ciudad,ramo,score,alertas,nivel_riesgo
+TEST-001,50000,5,10,3,FALSE,P001,52000,Robo,Quito,General,48,RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03a: 3+ siniestros en 18 meses (+8 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts) | RF-06: Monto ≥95% suma asegurada (+5 pts) | RF-07: Robo con >48h demora (+8 pts),ROJO
+TEST-002,30000,15,5,1,TRUE,P002,35000,Accidente,Guayaquil,General,17,RF-01b: Siniestro en 11-30 días (+4 pts) | RF-02b: Reporte tardío 4-7 días (+3 pts) | RF-05: Proveedor restrictivo (+10 pts),VERDE
+TEST-003,20000,35,2,0,TRUE,P003,25000,Incendio,Cuenca,General,0,,VERDE
+TEST-004,15000,8,8,2,FALSE,P001,16000,Robo,Quito,General,39,RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03b: 2 siniestros recientes (+4 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts) | RF-07: Robo con >48h demora (+8 pts),AMARILLO
+TEST-005,45000,25,1,0,TRUE,P004,50000,Vida,Ambato,General,4,RF-01b: Siniestro en 11-30 días (+4 pts),VERDE
+TEST-006,12000,3,15,4,FALSE,P002,13000,Salud,Loja,General,35,RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03a: 3+ siniestros en 18 meses (+8 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts),AMARILLO
+TEST-007,35000,45,3,1,TRUE,P003,40000,Vehículo,Guayaquil,General,0,,VERDE
+TEST-008,22000,12,6,0,TRUE,P004,24000,Robo,Quito,General,15,RF-01b: Siniestro en 11-30 días (+4 pts) | RF-02b: Reporte tardío 4-7 días (+3 pts) | RF-07: Robo con >48h demora (+8 pts),VERDE

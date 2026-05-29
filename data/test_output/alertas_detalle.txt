@@ -1,0 +1,73 @@
+════════════════════════════════════════════════════════════
+INFORME EJECUTIVO - ANÁLISIS DE FRAUDE
+Sistema FraudIA - Detección de Posibles Fraudes en Seguros
+════════════════════════════════════════════════════════════
+
+RESUMEN GENERAL
+────────────────────────────────────────────────────────────
+Total de siniestros analizados: 8
+Score promedio de riesgo: 19.8 (escala 0-100)
+Score mediano: 16
+
+DISTRIBUCIÓN DE RIESGO
+────────────────────────────────────────────────────────────
+  🔴 ROJO (Crítico):       1 casos ( 12.5%) - Revisión especializada inmediata
+  🟡 AMARILLO (Medio):     2 casos ( 25.0%) - Revisión documental recomendada
+  🟢 VERDE (Normal):       5 casos ( 62.5%) - Procesamiento normal
+
+TOP 5 INDICADORES DE ALERTA DETECTADOS
+────────────────────────────────────────────────────────────
+  1. RF-05: Proveedor restrictivo (+10 pts) (4 casos)
+  2. RF-01a: Siniestro en primeros 10 días (+8 pts) (3 casos)
+  3. RF-01b: Siniestro en 11-30 días (+4 pts) (3 casos)
+  4. RF-02a: Reporte tardío >7 días (+5 pts) (3 casos)
+  5. RF-04: Documentos incompletos (+4 pts) (3 casos)
+
+ANÁLISIS GEOGRÁFICO (Top 5 Ciudades con Mayor Riesgo)
+────────────────────────────────────────────────────────────
+  • Quito: 3 casos (1 ROJOS)
+  • Ambato: 1 casos (0 ROJOS)
+  • Cuenca: 1 casos (0 ROJOS)
+  • Guayaquil: 2 casos (0 ROJOS)
+  • Loja: 1 casos (0 ROJOS)
+
+ANÁLISIS DE PROVEEDORES (Top 5 con Mayor Alerta)
+────────────────────────────────────────────────────────────
+  • Proveedor P001: 2 casos (1 ROJOS)
+  • Proveedor P002: 2 casos (0 ROJOS)
+  • Proveedor P003: 2 casos (0 ROJOS)
+  • Proveedor P004: 2 casos (0 ROJOS)
+
+CASOS CRÍTICOS - TOP 3 PUNTUACIONES MÁS ALTAS
+────────────────────────────────────────────────────────────
+
+  Caso #1 - ID: TEST-001
+  Score: 48 (ROJO)
+  Indicadores: RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03a: 3+ siniestros en 18 meses (+8 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts) | RF-06: Monto ≥95% suma asegurada (+5 pts) | RF-07: Robo con >48h demora (+8 pts)
+
+
+  Caso #2 - ID: TEST-004
+  Score: 39 (AMARILLO)
+  Indicadores: RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03b: 2 siniestros recientes (+4 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts) | RF-07: Robo con >48h demora (+8 pts)
+
+
+  Caso #3 - ID: TEST-006
+  Score: 35 (AMARILLO)
+  Indicadores: RF-01a: Siniestro en primeros 10 días (+8 pts) | RF-02a: Reporte tardío >7 días (+5 pts) | RF-03a: 3+ siniestros en 18 meses (+8 pts) | RF-04: Documentos incompletos (+4 pts) | RF-05: Proveedor restrictivo (+10 pts)
+
+ANÁLISIS DE TENDENCIAS
+────────────────────────────────────────────────────────────
+  • 12.5% de casos requieren revisión especializada
+  • 25% de casos requieren revisión documental
+  • Concentración de riesgo: ALTA (>10%)
+
+RECOMENDACIONES
+────────────────────────────────────────────────────────────
+  1. Revisar inmediatamente los 1 casos ROJOS
+  2. Auditar indicador más frecuente: RF-05: Proveedor restrictivo (+10 pts)
+  3. Investigar patrones en proveedores con mayor concentración de riesgos
+  4. Validar proceso de reporte en casos con demora >7 días
+
+════════════════════════════════════════════════════════════
+Reporte generado: 2026-05-28 20:31:52
+════════════════════════════════════════════════════════════

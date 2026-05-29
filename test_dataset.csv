@@ -1,0 +1,9 @@
+id,amount,days_from_policy,days_to_report,history,documents_complete,provider,sum_insured,coverage,city
+TEST-001,50000,5,10,3,FALSE,P001,52000,Robo,Quito
+TEST-002,30000,15,5,1,TRUE,P002,35000,Accidente,Guayaquil
+TEST-003,20000,35,2,0,TRUE,P003,25000,Incendio,Cuenca
+TEST-004,15000,8,8,2,FALSE,P001,16000,Robo,Quito
+TEST-005,45000,25,1,0,TRUE,P004,50000,Vida,Ambato
+TEST-006,12000,3,15,4,FALSE,P002,13000,Salud,Loja
+TEST-007,35000,45,3,1,TRUE,P003,40000,Vehículo,Guayaquil
+TEST-008,22000,12,6,0,TRUE,P004,24000,Robo,Quito

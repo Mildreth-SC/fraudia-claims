@@ -1,0 +1,9 @@
+id_proveedor,nombre,tipo,ciudad,restrictivo,antiguedad,reclamos_asociados,monto_promedio_reclamado,porcentaje_casos_observados
+P001,Taller El Veloz,taller,Guayaquil,True,3,163,17313.02,16.3
+P002,Clinica San Marcos,clinica,Quito,True,5,153,16715.99,15.3
+P003,Taller Norte,taller,Quito,False,8,110,13757.02,11.0
+P004,Peritajes Express,perito,Cuenca,False,4,119,9889.28,11.9
+P005,Taller Central,taller,Manta,False,6,91,12475.63,9.1
+P006,Clinica del Sur,clinica,Guayaquil,False,10,103,10375.38,10.3
+P007,Grua Rapida,grua,Ambato,True,2,163,17818.49,16.3
+P008,Taller Premium,taller,Loja,False,7,98,10045.88,9.8

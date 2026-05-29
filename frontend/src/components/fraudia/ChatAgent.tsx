@@ -104,40 +104,40 @@ export function ChatAgent() {
 
   return (
     <div className="w-full">
-      <div className="flex h-[min(720px,calc(100vh-220px))] w-full flex-col overflow-hidden rounded-lg border border-border bg-white shadow-sm">
+      <div className="flex h-screen max-h-[calc(100vh-120px)] w-full flex-col overflow-hidden rounded-lg border border-border bg-white shadow-sm md:h-[720px]">
         <div
-          className="flex shrink-0 items-center gap-3 px-6 py-4"
+          className="flex shrink-0 items-center gap-3 px-4 py-3 sm:px-6 sm:py-4"
           style={{
             background: "linear-gradient(90deg, #1B3A6B 0%, #00AEEF 100%)",
           }}
         >
-          <Bot className="h-6 w-6 text-white" aria-hidden />
-          <div>
-            <h3 className="text-base font-semibold text-white">
+          <Bot className="h-5 w-5 shrink-0 text-white sm:h-6 sm:w-6" aria-hidden />
+          <div className="min-w-0 flex-1">
+            <h3 className="truncate text-sm font-semibold text-white sm:text-base">
               Agente Antifraude FraudIA
             </h3>
-            <p className="text-xs text-blue-100">
-              Consultas en lenguaje natural sobre siniestros
+            <p className="truncate text-xs text-blue-100">
+              Consultas en lenguaje natural
             </p>
           </div>
         </div>
 
-        <div className="flex-1 space-y-4 overflow-y-auto bg-slate-50 p-6">
+        <div className="flex-1 space-y-3 overflow-y-auto bg-slate-50 px-3 py-4 sm:space-y-4 sm:px-6 sm:py-6">
           {messages.map((msg, idx) => (
             <div
               key={`${msg.role}-${idx}`}
-              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+              className={`flex w-full ${msg.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${
+                className={`break-words rounded-2xl px-3 py-2 text-sm leading-relaxed sm:px-4 sm:py-3 ${
                   msg.role === "user"
-                    ? "rounded-br-sm bg-[#1B3A6B] text-white"
-                    : "rounded-bl-sm border border-gray-200 bg-gray-100 text-gray-900"
+                    ? "rounded-br-sm w-full bg-[#1B3A6B] text-white xs:max-w-xs sm:max-w-sm md:max-w-md"
+                    : "rounded-bl-sm border border-gray-200 bg-gray-100 text-gray-900 w-full xs:max-w-xs sm:max-w-sm md:max-w-md"
                 }`}
               >
                 {msg.role === "assistant" && (
                   <div className="mb-1 flex items-center gap-2 text-xs font-medium text-gray-600">
-                    <Bot className="h-3.5 w-3.5" aria-hidden />
+                    <Bot className="h-3 w-3 shrink-0" aria-hidden />
                     <span>Agente FraudIA</span>
                   </div>
                 )}
@@ -146,16 +146,16 @@ export function ChatAgent() {
                     Analista
                   </p>
                 )}
-                <p className="whitespace-pre-wrap">{msg.content}</p>
+                <p className="whitespace-pre-wrap break-words">{msg.content}</p>
               </div>
             </div>
           ))}
 
           {loading && (
-            <div className="flex justify-start">
-              <div className="rounded-2xl rounded-bl-sm border border-gray-200 bg-gray-100 px-4 py-3">
+            <div className="flex w-full justify-start">
+              <div className="break-words rounded-2xl rounded-bl-sm border border-gray-200 bg-gray-100 px-3 py-2 text-sm sm:px-4 sm:py-3">
                 <div className="mb-1 flex items-center gap-2 text-xs font-medium text-gray-600">
-                  <Bot className="h-3.5 w-3.5" aria-hidden />
+                  <Bot className="h-3 w-3 shrink-0" aria-hidden />
                   <span>Agente FraudIA</span>
                 </div>
                 <LoadingDots />
@@ -166,18 +166,18 @@ export function ChatAgent() {
           <div ref={messagesEndRef} />
         </div>
 
-        <div className="shrink-0 border-t border-border bg-white px-6 py-3">
+        <div className="shrink-0 border-t border-border bg-white px-3 py-2 sm:px-6 sm:py-3">
           <p className="mb-2 text-xs font-medium text-muted-foreground">
             Preguntas sugeridas
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {SUGGESTED_QUESTIONS.map((question) => (
               <button
                 key={question}
                 type="button"
                 onClick={() => void sendMessage(question)}
                 disabled={loading}
-                className="rounded-full border border-[#00AEEF] bg-white px-3 py-1.5 text-xs text-[#1B3A6B] transition hover:bg-blue-50 disabled:cursor-not-allowed disabled:opacity-50"
+                className="truncate rounded-full border border-[#00AEEF] bg-white px-2 py-1 text-xs text-[#1B3A6B] transition hover:bg-blue-50 disabled:cursor-not-allowed disabled:opacity-50 sm:px-3 sm:py-1.5"
               >
                 {question}
               </button>
@@ -185,7 +185,7 @@ export function ChatAgent() {
           </div>
         </div>
 
-        <div className="shrink-0 border-t border-border bg-white px-6 py-4">
+        <div className="shrink-0 border-t border-border bg-white px-3 py-3 sm:px-6 sm:py-4">
           <label className="mb-3 flex cursor-pointer items-center gap-2 text-xs text-muted-foreground">
             <input
               type="checkbox"
@@ -193,7 +193,7 @@ export function ChatAgent() {
               onChange={(e) => setUseUploadedDataset(e.target.checked)}
               className="rounded border-border"
             />
-            Usar dataset subido (pestaña Analizar Dataset) en lugar de la cartera local
+            <span className="truncate">Usar dataset subido</span>
           </label>
           <div className="flex gap-2">
             <input
@@ -203,7 +203,7 @@ export function ChatAgent() {
               onKeyDown={handleKeyDown}
               placeholder="Escribe tu pregunta..."
               disabled={loading}
-              className="flex-1 rounded-lg border border-border px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#00AEEF] disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex-1 rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#00AEEF] disabled:cursor-not-allowed disabled:opacity-50"
               aria-label="Mensaje para el agente"
             />
             <button
@@ -219,8 +219,8 @@ export function ChatAgent() {
               <Send className="h-4 w-4" />
             </button>
           </div>
-          <p className="mt-3 text-center text-xs text-muted-foreground">
-            Este sistema genera alertas de revision, no acusaciones formales.
+          <p className="mt-2 text-center text-xs text-muted-foreground sm:mt-3">
+            Este sistema genera alertas de revisión, no acusaciones formales.
           </p>
         </div>
       </div>

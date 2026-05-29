@@ -1,0 +1,23 @@
+Filas leidas: 272
+Columnas detectadas: 28
+
+  id_siniestro <- id_siniestro
+  monto_reclamado <- monto_reclamado
+  dias_desde_inicio_poliza <- dias_desde_inicio_poliza
+  dias_entre_ocurrencia_reporte <- dias_entre_ocurrencia_reporte
+  historial_siniestros_asegurado <- historial_siniestros_asegurado
+  documentos_completos <- documentos_completos
+  id_proveedor <- id_proveedor
+  suma_asegurada <- suma_asegurada
+  cobertura <- cobertura
+  ciudad <- ciudad
+  ramo <- ramo
+  beneficiario <- beneficiario
+  descripcion <- descripcion
+  placa <- (valor por defecto)
+  id_asegurado <- id_asegurado
+
+Vehiculos enlazados: 272 registro(s) (local o columna placa).
+
+Reglas RF aplicadas (Python).
+Graficos generados con matplotlib desde el dataset subido.
