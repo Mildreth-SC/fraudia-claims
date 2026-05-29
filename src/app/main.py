@@ -141,6 +141,7 @@ async def analizar_dataset(file: UploadFile = File(...)):
     Analiza un dataset CSV: limpia datos, aplica reglas de fraude, genera reportes
     Ejecuta R script para procesamiento completo con mapeo automático de columnas
     """
+    global _loaded_dataset, _loaded_dataset_columns
     temp_csv = None
     try:
         # Obtener ruta absoluta del directorio actual
@@ -183,6 +184,14 @@ async def analizar_dataset(file: UploadFile = File(...)):
             print(f"R error: {result.stderr}")
             # Fallback: pipeline Python (soporta CSV y Excel)
             result_py = analizar_archivo_csv(temp_csv, output_dir, root=ROOT)
+
+            # Guardar dataset del resultado Python en estado global
+            global _loaded_dataset, _loaded_dataset_columns
+            cleaned_csv_py = os.path.join(output_dir, "cleaned_data.csv")
+            if os.path.exists(cleaned_csv_py):
+                _loaded_dataset = pd.read_csv(cleaned_csv_py)
+                _loaded_dataset_columns = list(_loaded_dataset.columns)
+
             return Response(
                 content=json_response_bytes(result_py),
                 media_type="application/json; charset=utf-8",
@@ -233,7 +242,6 @@ async def analizar_dataset(file: UploadFile = File(...)):
                 reporte_alertas = f.read()
 
         # GUARDAR el dataset en estado global para consultas posteriores
-        global _loaded_dataset, _loaded_dataset_columns
         if os.path.exists(cleaned_csv):
             _loaded_dataset = pd.read_csv(cleaned_csv)
             _loaded_dataset_columns = list(_loaded_dataset.columns)
@@ -310,6 +318,11 @@ def dataset_consulta(request: SqlQueryRequest):
 
         # Ejecutar consulta con límite
         result = df.head(request.limit)
+        
+        # Limpiar NaN e Inf
+        import numpy as np
+        result = result.replace([np.inf, -np.inf], np.nan)
+        result = result.astype(object).where(pd.notnull(result), None)
 
         columnas = list(result.columns)
         filas = result.to_dict(orient="records")
