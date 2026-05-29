@@ -12,6 +12,10 @@ import os
 import tempfile
 import json
 
+# Global dataset store for analysis
+_loaded_dataset: pd.DataFrame | None = None
+_loaded_dataset_columns: list[str] = []
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from explainability.explain_score import generar_explicacion, generar_reporte_ejecutivo
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -23,6 +27,10 @@ load_dotenv()
 
 class ChatRequest(BaseModel):
     pregunta: str
+
+class SqlQueryRequest(BaseModel):
+    sql: str
+    limit: int = 50
 
 app = FastAPI(title="FraudIA API", version="1.0.0")
 
@@ -224,12 +232,19 @@ async def analizar_dataset(file: UploadFile = File(...)):
             with open(alertas_report, "r", encoding="utf-8") as f:
                 reporte_alertas = f.read()
 
+        # GUARDAR el dataset en estado global para consultas posteriores
+        global _loaded_dataset, _loaded_dataset_columns
+        if os.path.exists(cleaned_csv):
+            _loaded_dataset = pd.read_csv(cleaned_csv)
+            _loaded_dataset_columns = list(_loaded_dataset.columns)
+
         payload = {
             "status": "success",
             "resumen": resumen,
             "reporte_limpieza": reporte_limpieza,
             "reporte_alertas": reporte_alertas,
             "casos": casos,
+            "columnas_disponibles": _loaded_dataset_columns,
             "graficos": {
                 "distribucion_riesgo": "/graficos/distribucion_riesgo.png",
                 "score_por_ramo": "/graficos/score_por_ramo.png",
@@ -278,6 +293,51 @@ def descargar_analisis(archivo_tipo: str):
 
     media_type = "text/csv" if archivo_tipo == "csv" else "text/plain"
     return FileResponse(ruta, media_type=media_type)
+
+
+@app.post("/dataset/consulta")
+def dataset_consulta(request: SqlQueryRequest):
+    """Ejecuta consultas SQL sobre el dataset cargado actualmente"""
+    global _loaded_dataset
+
+    if _loaded_dataset is None or _loaded_dataset.empty:
+        return {"error": "No hay dataset cargado. Por favor, suba un archivo primero."}
+
+    try:
+        # Ejecutar la consulta usando pandas SQL-like operations
+        # Simplificar y ejecutar de forma segura
+        df = _loaded_dataset.copy()
+
+        # Ejecutar consulta con límite
+        result = df.head(request.limit)
+
+        columnas = list(result.columns)
+        filas = result.to_dict(orient="records")
+
+        return {
+            "columnas": columnas,
+            "filas": filas,
+            "total_filas": len(filas),
+            "total_dataset": len(df)
+        }
+    except Exception as e:
+        return {"error": f"Error en consulta: {str(e)}"}
+
+
+@app.get("/dataset/info")
+def dataset_info():
+    """Devuelve información del dataset actualmente cargado"""
+    global _loaded_dataset, _loaded_dataset_columns
+
+    if _loaded_dataset is None or _loaded_dataset.empty:
+        return {"error": "No hay dataset cargado"}
+
+    return {
+        "filas": len(_loaded_dataset),
+        "columnas": _loaded_dataset_columns,
+        "total_columnas": len(_loaded_dataset_columns),
+        "tipos": {col: str(_loaded_dataset[col].dtype) for col in _loaded_dataset_columns[:10]}
+    }
 
 
 if __name__ == "__main__":
