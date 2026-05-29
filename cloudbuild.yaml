@@ -1,0 +1,35 @@
+steps:
+  # Build Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/fraudia-api:$COMMIT_SHA'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/fraudia-api:latest'
+      - '.'
+
+  # Push to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/fraudia-api:$COMMIT_SHA'
+
+  # Deploy to Cloud Run
+  - name: 'gcr.io/cloud-builders/gke-deploy'
+    args:
+      - run
+      - --filename=.
+      - --image=gcr.io/$PROJECT_ID/fraudia-api:$COMMIT_SHA
+      - --location=us-central1
+      - --namespace=default
+
+images:
+  - 'gcr.io/$PROJECT_ID/fraudia-api:$COMMIT_SHA'
+  - 'gcr.io/$PROJECT_ID/fraudia-api:latest'
+
+options:
+  machineType: 'N1_HIGHCPU_8'
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: '1200s'
