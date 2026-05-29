@@ -34,6 +34,10 @@ def subir_tabla(archivo, tabla):
 # Limpiar tablas primero
 print("Limpiando tablas...")
 supabase.table("documentos").delete().neq("id_documento", "").execute()
+try:
+    supabase.table("vehiculos").delete().neq("id_vehiculo", "").execute()
+except Exception as e:
+    print(f"  (vehiculos: {e} - crear tabla en Supabase si no existe)")
 supabase.table("siniestros").delete().neq("id_siniestro", "").execute()
 supabase.table("proveedores").delete().neq("id_proveedor", "").execute()
 supabase.table("polizas").delete().neq("id_poliza", "").execute()
@@ -43,6 +47,7 @@ subir_tabla("data/synthetic/asegurados.csv", "asegurados")
 subir_tabla("data/synthetic/proveedores.csv", "proveedores")
 subir_tabla("data/synthetic/polizas.csv", "polizas")
 subir_tabla("data/synthetic/siniestros.csv", "siniestros")
+subir_tabla("data/synthetic/vehiculos.csv", "vehiculos")
 subir_tabla("data/synthetic/documentos.csv", "documentos")
 
-print("\n🎉 Todas las tablas subidas a Supabase!")
+print("\nTodas las tablas subidas a Supabase!")

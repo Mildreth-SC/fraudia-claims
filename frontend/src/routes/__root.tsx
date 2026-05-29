@@ -9,7 +9,8 @@ import {
   useNavigate,
 } from "@tanstack/react-router";
 import { createContext, useContext, useEffect, useState } from "react";
-import { type User, loadAuthFromStorage, clearAuthFromStorage } from "@/lib/auth";
+import { type User, loadAuthFromStorage } from "@/lib/auth";
+import { logout as clearSession } from "@/components/fraudia/Login";
 
 import appCss from "../styles.css?url";
 
@@ -148,7 +149,7 @@ function RootComponent() {
 
   const logout = () => {
     setUser(null);
-    clearAuthFromStorage();
+    clearSession();
   };
 
   if (loading) {

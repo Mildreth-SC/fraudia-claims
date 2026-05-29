@@ -2,14 +2,15 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { FraudiaHeader } from "@/components/fraudia/Header";
 import { MetricsCards } from "@/components/fraudia/MetricsCards";
+import { SavingsCard } from "@/components/fraudia/SavingsCard";
 import { CasesTable } from "@/components/fraudia/CasesTable";
-import { AiAgent } from "@/components/fraudia/AiAgent";
+import { ChatAgent } from "@/components/fraudia/ChatAgent";
 import { Charts } from "@/components/fraudia/Charts";
 import { ProveedoresTable } from "@/components/fraudia/ProveedoresTable";
 import { DownloadActions } from "@/components/fraudia/DownloadActions";
 import { LoadingSpinner, ErrorState } from "@/components/fraudia/LoadingState";
 import { DataAnalyzer } from "@/components/fraudia/DataAnalyzer";
-import { api, type Case, type Metrics, type Proveedor } from "@/lib/fraudia-api";
+import { api, API_BASE, type Case, type Metrics, type Proveedor } from "@/lib/fraudia-api";
 import { useAuth } from "./__root";
 
 export const Route = createFileRoute("/")({
@@ -35,46 +36,6 @@ function SectionTitle({ title, subtitle }: { title: string; subtitle?: string })
   );
 }
 
-const RISK_COLORS = { ROJO: "#E24B4A", AMARILLO: "#F59E0B", VERDE: "#22C55E" } as const;
-
-function deriveCharts(cases: Case[], proveedores: Proveedor[]) {
-  const dist = (["ROJO", "AMARILLO", "VERDE"] as const).map((nivel) => ({
-    name: nivel.charAt(0) + nivel.slice(1).toLowerCase(),
-    value: cases.filter((c) => c.nivel === nivel).length,
-    color: RISK_COLORS[nivel],
-  }));
-
-  const ramoMap = new Map<string, { sum: number; n: number }>();
-  cases.forEach((c) => {
-    if (!c.ramo) return;
-    const e = ramoMap.get(c.ramo) ?? { sum: 0, n: 0 };
-    e.sum += c.score;
-    e.n += 1;
-    ramoMap.set(c.ramo, e);
-  });
-  const scorePorRamo = [...ramoMap.entries()]
-    .map(([ramo, e]) => ({ ramo, score: Math.round((e.sum / e.n) * 10) / 10 }))
-    .sort((a, b) => b.score - a.score);
-
-  const topProveedores = [...proveedores]
-    .sort((a, b) => b.alertas - a.alertas)
-    .slice(0, 5)
-    .map((p) => ({ proveedor: p.nombre, alertas: p.alertas }));
-
-  const ciudadMap = new Map<string, number>();
-  cases.forEach((c) => {
-    if (!c.ciudad) return;
-    if (c.nivel === "VERDE") return;
-    ciudadMap.set(c.ciudad, (ciudadMap.get(c.ciudad) ?? 0) + 1);
-  });
-  const alertasPorCiudad = [...ciudadMap.entries()]
-    .map(([ciudad, alertas]) => ({ ciudad, alertas }))
-    .sort((a, b) => b.alertas - a.alertas)
-    .slice(0, 8);
-
-  return { dist, scorePorRamo, topProveedores, alertasPorCiudad };
-}
-
 function Index() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
@@ -98,7 +59,7 @@ function Index() {
     try {
       const [m, c, p] = await Promise.all([
         api.metrics(),
-        api.cases(),
+        api.cases({ limit: 5000, prioridad: false }),
         api.proveedores(),
       ]);
       setMetrics(m);
@@ -129,8 +90,22 @@ function Index() {
       return (
         <>
           <MetricsCards metrics={metrics} />
-          <Charts />
-          <CasesTable cases={cases.slice(0, 10)} />
+          <SavingsCard
+            metrics={{
+              montoTotalRojos: metrics.montoTotalRojos,
+              ahorroPotencial: metrics.ahorroPotencial,
+              casosPendientes: metrics.casosPendientes,
+              casosBajoRiesgo: metrics.casosBajoRiesgo,
+            }}
+          />
+          <Charts cases={cases} />
+          <CasesTable
+            cases={cases}
+            title="Top 10 - Prioridad de revision"
+            subtitle="Casos con mayor score; use filtros para ver otros niveles"
+            defaultFilter="todos"
+            maxRows={10}
+          />
         </>
       );
     }
@@ -138,7 +113,12 @@ function Index() {
       return (
         <>
           <MetricsCards metrics={metrics} />
-          <CasesTable cases={cases} />
+          <CasesTable
+            cases={cases}
+            title="Cartera completa de siniestros"
+            subtitle="Filtre por nivel: alto, medio, bajo o solo con alerta"
+            defaultFilter="alertas"
+          />
         </>
       );
     }
@@ -146,7 +126,7 @@ function Index() {
       return (
         <>
           <ProveedoresTable proveedores={proveedores} />
-          <Charts />
+          <Charts cases={cases} />
         </>
       );
     }
@@ -154,23 +134,14 @@ function Index() {
       return <DataAnalyzer />;
     }
     if (tab === "Agente IA") {
-      return <AiAgent />;
+      return <ChatAgent />;
     }
-    return (
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
-          <AiAgent />
-        </div>
-        <div className="space-y-4">
-          <MetricsCards metrics={metrics} />
-        </div>
-      </div>
-    );
+    return null;
   };
 
   const subtitles: Record<string, string> = {
-    "Panel General": "Vista consolidada de siniestros y alertas de fraude",
-    "Casos Sospechosos": "Siniestros marcados por el motor de detección",
+    "Panel General": "Resumen de cartera, graficos por nivel y top 10 prioritarios",
+    "Casos Sospechosos": "Cartera completa con filtros por alto, medio y bajo riesgo",
     Proveedores: "Análisis de proveedores asociados a alertas",
     "Agente IA": "Consultas en lenguaje natural sobre la cartera",
     "Analizar Dataset": "Carga y analiza tus propios datasets",
@@ -191,7 +162,7 @@ function Index() {
         <footer className="pt-4 pb-8 text-center text-xs text-muted-foreground border-t border-border">
           <p className="pt-4">
             © Aseguradora del Sur · FraudIA · API:{" "}
-            <code className="font-mono text-brand">gilled-founder-plot.ngrok-free.dev</code>
+            <code className="font-mono text-brand">{API_BASE.replace(/^https?:\/\//, "")}</code>
           </p>
         </footer>
       </main>

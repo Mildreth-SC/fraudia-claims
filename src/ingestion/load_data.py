@@ -171,6 +171,46 @@ for i in range(1000):
         })
         doc_counter += 1
 
+# ── VEHICULOS ────────────────────────────────────────────
+marcas_vehiculo = ["Toyota", "Chevrolet", "Hyundai", "Kia", "Mazda", "Nissan"]
+modelos_por_marca = {
+    "Toyota": ["Corolla", "Hilux", "RAV4", "Yaris"],
+    "Chevrolet": ["Spark", "D-Max", "Captiva", "Aveo"],
+    "Hyundai": ["Accent", "Tucson", "Santa Fe", "Elantra"],
+    "Kia": ["Rio", "Sportage", "Picanto", "Sorento"],
+    "Mazda": ["3", "CX-5", "BT-50", "2"],
+    "Nissan": ["Versa", "Kicks", "Frontier", "Sentra"],
+}
+
+def _generar_placa():
+    return (
+        f"{random.choice('ABCDEFGHJKLMNPQR')}{random.randint(100, 999)}"
+        f"{random.choice('ABCDEFGHJKLMNPQR')}{random.randint(100, 999)}"
+    )
+
+vehiculos_data = []
+placas_asignadas = []
+# 5 placas repetidas en 3 siniestros cada una (activa regla de alta frecuencia)
+for _ in range(5):
+    p = _generar_placa()
+    placas_asignadas.extend([p, p, p])
+
+for i, sin in enumerate(siniestros_data):
+    id_v = f"VEH-{str(i + 1).zfill(5)}"
+    marca = random.choice(marcas_vehiculo)
+    placa = placas_asignadas[i] if i < len(placas_asignadas) else _generar_placa()
+
+    vehiculos_data.append({
+        "id_vehiculo": id_v,
+        "id_siniestro": sin["id_siniestro"],
+        "placa": placa,
+        "chasis": fake.bothify(text="???#########????"),
+        "motor": fake.bothify(text="???####"),
+        "marca": marca,
+        "modelo": random.choice(modelos_por_marca[marca]),
+        "anio": random.randint(2012, 2024),
+    })
+
 # Calcular stats de proveedores
 df_sin = pd.DataFrame(siniestros_data)
 for p in proveedores_data:
@@ -185,10 +225,12 @@ pd.DataFrame(polizas_data).to_csv("data/synthetic/polizas.csv", index=False)
 pd.DataFrame(asegurados_data).to_csv("data/synthetic/asegurados.csv", index=False)
 pd.DataFrame(proveedores_data).to_csv("data/synthetic/proveedores.csv", index=False)
 pd.DataFrame(documentos_data).to_csv("data/synthetic/documentos.csv", index=False)
+pd.DataFrame(vehiculos_data).to_csv("data/synthetic/vehiculos.csv", index=False)
 
-print("✅ Dataset completo generado:")
+print("Dataset completo generado:")
 print(f"   Siniestros:  {len(siniestros_data)}")
 print(f"   Polizas:     {len(polizas_data)}")
 print(f"   Asegurados:  {len(asegurados_data)}")
 print(f"   Proveedores: {len(proveedores_data)}")
 print(f"   Documentos:  {len(documentos_data)}")
+print(f"   Vehiculos:   {len(vehiculos_data)}")

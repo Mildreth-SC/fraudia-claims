@@ -1,0 +1,28 @@
+
+╔══════════════════════════════════════════════════════════╗
+║         REPORTE EJECUTIVO — FraudIA                      ║
+║         Aseguradora del Sur                              ║
+╚══════════════════════════════════════════════════════════╝
+
+RESUMEN GENERAL:
+  Total siniestros analizados: 500
+  🔴 Casos ROJOS (revisión urgente):     0 (0.0%)
+  🟡 Casos AMARILLOS (revisión doc.):    0 (0.0%)
+  🟢 Casos VERDES (flujo normal):        500 (100.0%)
+  
+  Score promedio: 8.0
+  Anomalías ML detectadas: 0
+
+TOP 5 CASOS PRIORITARIOS:
+
+  11; | Score: 17 | VERDE | 11; | $5,000.00
+  14; | Score: 17 | VERDE | 14; | $5,000.00
+  14; | Score: 17 | VERDE | 14; | $5,000.00
+  14; | Score: 17 | VERDE | 14; | $5,000.00
+  11; | Score: 17 | VERDE | 11; | $5,000.00
+
+PROVEEDORES CON MÁS ALERTAS ROJAS:
+
+
+NOTA ÉTICA: Este reporte es una herramienta de apoyo para analistas.
+Ningún caso debe ser rechazado automáticamente sin revisión humana.

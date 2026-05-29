@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi import UploadFile, File, Body
 from supabase import create_client
-from groq import Groq
 from dotenv import load_dotenv
 from pydantic import BaseModel
 import pandas as pd
@@ -14,9 +13,11 @@ import tempfile
 import json
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from rules.fraud_rules import calcular_score
 from explainability.explain_score import generar_explicacion, generar_reporte_ejecutivo
-from models.fraud_model import entrenar_modelo
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from app.data_pipeline import cargar_desde_supabase, vehiculo_por_siniestro, calcular_resumen_negocio
+from app.chat_service import responder_chat
+from app.dataset_analyzer import analizar_archivo_csv, json_response_bytes
 
 load_dotenv()
 
@@ -33,15 +34,9 @@ app.add_middleware(
 )
 
 supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY"))
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def cargar_datos():
-    response = supabase.table("siniestros").select("*").execute()
-    df = pd.DataFrame(response.data)
-    resultados = df.apply(calcular_score, axis=1)
-    df = pd.concat([df, resultados], axis=1)
-    df, _, _ = entrenar_modelo(df)
-    return df
+    return cargar_desde_supabase(supabase)
 
 @app.get("/")
 def root():
@@ -50,35 +45,23 @@ def root():
 @app.get("/resumen")
 def resumen():
     df = cargar_datos()
-    return {
-        "total_siniestros": len(df),
-        "rojos": int(len(df[df['nivel_riesgo']=='ROJO'])),
-        "amarillos": int(len(df[df['nivel_riesgo']=='AMARILLO'])),
-        "verdes": int(len(df[df['nivel_riesgo']=='VERDE'])),
-        "score_promedio": round(float(df['score'].mean()), 1),
-        "anomalias_ml": int(df['es_anomalia'].sum()),
-    }
+    return calcular_resumen_negocio(df)
 
 @app.get("/casos")
-def casos(nivel: str = None, limit: int = 500):
+def casos(nivel: str = None, limit: int = 500, prioridad: bool = True):
     df = cargar_datos()
     if nivel:
         df = df[df['nivel_riesgo'] == nivel.upper()]
-    df = df.nlargest(limit, 'score')
+    if prioridad:
+        df = df.nlargest(min(limit, len(df)), 'score')
+    else:
+        df = df.head(min(limit, len(df)))
     return df[['id_siniestro','nivel_riesgo','score','ramo','ciudad',
                'monto_reclamado','alertas','beneficiario']].to_dict(orient='records')
 
 @app.get("/caso/{id_siniestro}")
 def caso_detalle(id_siniestro: str):
-    df = cargar_datos()
-    row = df[df['id_siniestro'] == id_siniestro]
-    if row.empty:
-        return {"error": "Caso no encontrado"}
-    row = row.iloc[0]
-    return {
-        "caso": row.to_dict(),
-        "explicacion": generar_explicacion(row)
-    }
+    return {"info": "Usa la tabla de casos para ver detalles. Endpoint en desarrollo."}
 
 @app.get("/reporte")
 def reporte():
@@ -107,30 +90,7 @@ def proveedores():
 @app.post("/chat")
 def chat(request: ChatRequest):
     df = cargar_datos()
-    rojos = df[df['nivel_riesgo']=='ROJO']
-    contexto = f"""
-Eres un asistente especializado en detección de posibles fraudes en siniestros de seguros.
-NUNCA acuses a nadie de fraude. Siempre di "posible fraude" o "requiere revisión".
-
-DATOS ACTUALES:
-- Total siniestros: {len(df)}
-- Casos ROJOS: {len(rojos)}
-- Score promedio: {round(df['score'].mean(),1)}
-- Top proveedores con alertas: {df[df['nivel_riesgo']=='ROJO'].groupby('beneficiario').size().nlargest(3).to_dict()}
-
-TOP 10 CASOS CRÍTICOS:
-{df.nlargest(10,'score')[['id_siniestro','score','nivel_riesgo','alertas']].to_string(index=False)}
-"""
-    respuesta = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[
-            {"role": "system", "content": contexto},
-            {"role": "user", "content": request.pregunta}
-        ],
-        temperature=0.3,
-        max_tokens=1024
-    )
-    return {"respuesta": respuesta.choices[0].message.content}
+    return {"respuesta": responder_chat(df, request.pregunta)}
 
 @app.get("/descargar/reporte")
 def descargar_reporte():
@@ -213,11 +173,12 @@ async def analizar_dataset(file: UploadFile = File(...)):
 
         if result.returncode != 0:
             print(f"R error: {result.stderr}")
-            # Si R falla, retornar error con detalles
-            return {
-                "status": "error",
-                "error": f"Error procesando datos: {result.stderr[:500]}"
-            }
+            # Fallback: pipeline Python (soporta CSV y Excel)
+            result_py = analizar_archivo_csv(temp_csv, output_dir, root=ROOT)
+            return Response(
+                content=json_response_bytes(result_py),
+                media_type="application/json; charset=utf-8",
+            )
 
         # Leer archivos generados
         cleaned_csv = os.path.join(output_dir, "cleaned_data.csv")
@@ -230,20 +191,27 @@ async def analizar_dataset(file: UploadFile = File(...)):
 
         if os.path.exists(cleaned_csv):
             df = pd.read_csv(cleaned_csv)
+            # Limpiar NaN/Inf antes de serializar a JSON
+            df = df.fillna(0)
+            df = df.replace([float("inf"), float("-inf")], 0)
+
             resumen["total_casos"] = len(df)
             resumen["rojos"] = int((df["nivel_riesgo"] == "ROJO").sum()) if "nivel_riesgo" in df.columns else 0
             resumen["amarillos"] = int((df["nivel_riesgo"] == "AMARILLO").sum()) if "nivel_riesgo" in df.columns else 0
             resumen["verdes"] = int((df["nivel_riesgo"] == "VERDE").sum()) if "nivel_riesgo" in df.columns else 0
-            resumen["score_promedio"] = round(float(df["score"].mean()), 1) if "score" in df.columns else 0
+            if "score" in df.columns:
+                mean_score = df["score"].mean()
+                resumen["score_promedio"] = (
+                    round(float(mean_score), 1) if pd.notna(mean_score) else 0
+                )
+            else:
+                resumen["score_promedio"] = 0
 
-            # Convertir a casos
-            for _, row in df.iterrows():
-                casos.append({
-                    "id_siniestro": str(row.get("id_siniestro", "")),
-                    "nivel_riesgo": str(row.get("nivel_riesgo", "VERDE")),
-                    "score": float(row.get("score", 0)),
-                    "alertas": str(row.get("alertas", ""))
-                })
+            cols = [c for c in ["id_siniestro", "nivel_riesgo", "score", "alertas"] if c in df.columns]
+            casos_df = df.nlargest(50, "score")[cols] if "score" in cols else df.head(50)[cols]
+            if "alertas" in casos_df.columns:
+                casos_df["alertas"] = casos_df["alertas"].astype(str)
+            casos = casos_df.to_dict(orient="records")
 
         # Leer reportes
         reporte_limpieza = ""
@@ -256,7 +224,7 @@ async def analizar_dataset(file: UploadFile = File(...)):
             with open(alertas_report, "r", encoding="utf-8") as f:
                 reporte_alertas = f.read()
 
-        return {
+        payload = {
             "status": "success",
             "resumen": resumen,
             "reporte_limpieza": reporte_limpieza,
@@ -266,17 +234,22 @@ async def analizar_dataset(file: UploadFile = File(...)):
                 "distribucion_riesgo": "/graficos/distribucion_riesgo.png",
                 "score_por_ramo": "/graficos/score_por_ramo.png",
                 "top_proveedores": "/graficos/top_proveedores.png",
-                "alertas_ciudad": "/graficos/alertas_ciudad.png"
-            }
+                "alertas_ciudad": "/graficos/alertas_ciudad.png",
+            },
         }
+        return Response(
+            content=json_response_bytes(payload),
+            media_type="application/json; charset=utf-8",
+        )
 
     except Exception as e:
         import traceback
         print(f"Error en /analizar-dataset: {traceback.format_exc()}")
-        return {
-            "error": str(e),
-            "status": "error"
-        }
+        return Response(
+            content=json_response_bytes({"status": "error", "error": str(e)}),
+            media_type="application/json; charset=utf-8",
+            status_code=500,
+        )
     finally:
         # Limpiar archivo temporal
         try:
@@ -305,3 +278,9 @@ def descargar_analisis(archivo_tipo: str):
 
     media_type = "text/csv" if archivo_tipo == "csv" else "text/plain"
     return FileResponse(ruta, media_type=media_type)
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=8000)

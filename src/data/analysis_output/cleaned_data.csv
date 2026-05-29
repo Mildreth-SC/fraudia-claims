@@ -1,0 +1,501 @@
+id_siniestro,monto_reclamado,historial_siniestros_asegurado,documentos_completos,id_proveedor,suma_asegurada,cobertura,ramo,beneficiario,descripcion,placa,id_asegurado,dias_desde_inicio_poliza,dias_entre_ocurrencia_reporte,ciudad,frecuencia_placa,marca_vehiculo,modelo_vehiculo,anio_vehiculo,frecuencia_conductor_veh,frecuencia_conductor,doc_inconsistente,frecuencia_beneficiario,similitud_narrativa,score,nivel_riesgo,alertas,anomalia_score,es_anomalia
+15;,5000.0,0.0,False,15;,20000.0,15;,15;,15;,15;,15;,15;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+31;PTACP20260183492,5000.0,0.0,False,31;PTACP20260183492,20000.0,31;PTACP20260183492,31;PTACP20260183492,31;PTACP20260183492,31;PTACP20260183492,31;PTACP20260183492,31;PTACP20260183492,60,2,Quito,1,,,,0,0,False,1,0.5342313765226236,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+06;,5000.0,0.0,False,06;,20000.0,06;,06;,06;,06;,06;,06;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+4;,5000.0,0.0,False,4;,20000.0,4;,4;,4;,4;,4;,4;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+31;,5000.0,0.0,False,31;,20000.0,31;,31;,31;,31;,31;,31;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+08;,5000.0,0.0,False,08;,20000.0,08;,08;,08;,08;,08;,08;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+22;,5000.0,0.0,False,22;,20000.0,22;,22;,22;,22;,22;,22;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+13;,5000.0,0.0,False,13;,20000.0,13;,13;,13;,13;,13;,13;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+61;,5000.0,0.0,False,61;,20000.0,61;,61;,61;,61;,61;,61;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+22;,5000.0,0.0,False,22;,20000.0,22;,22;,22;,22;,22;,22;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+59;PTACP20260739281,5000.0,0.0,False,59;PTACP20260739281,20000.0,59;PTACP20260739281,59;PTACP20260739281,59;PTACP20260739281,59;PTACP20260739281,59;PTACP20260739281,59;PTACP20260739281,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+24;,5000.0,0.0,False,24;,20000.0,24;,24;,24;,24;,24;,24;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+16;,5000.0,0.0,False,16;,20000.0,16;,16;,16;,16;,16;,16;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+23;,5000.0,0.0,False,23;,20000.0,23;,23;,23;,23;,23;,23;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+35;,5000.0,0.0,False,35;,20000.0,35;,35;,35;,35;,35;,35;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+36;,5000.0,0.0,False,36;,20000.0,36;,36;,36;,36;,36;,36;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+11;,5000.0,0.0,False,11;,20000.0,11;,11;,11;,11;,11;,11;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+14;,5000.0,0.0,False,14;,20000.0,14;,14;,14;,14;,14;,14;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+57;,5000.0,0.0,False,57;,20000.0,57;,57;,57;,57;,57;,57;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+26;,5000.0,0.0,False,26;,20000.0,26;,26;,26;,26;,26;,26;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+51;,5000.0,0.0,False,51;,20000.0,51;,51;,51;,51;,51;,51;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+14;,5000.0,0.0,False,14;,20000.0,14;,14;,14;,14;,14;,14;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+12;,5000.0,0.0,False,12;,20000.0,12;,12;,12;,12;,12;,12;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+28;,5000.0,0.0,False,28;,20000.0,28;,28;,28;,28;,28;,28;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+14;,5000.0,0.0,False,14;,20000.0,14;,14;,14;,14;,14;,14;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+11;,5000.0,0.0,False,11;,20000.0,11;,11;,11;,11;,11;,11;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+81;,5000.0,0.0,False,81;,20000.0,81;,81;,81;,81;,81;,81;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+27;,5000.0,0.0,False,27;,20000.0,27;,27;,27;,27;,27;,27;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+06;,5000.0,0.0,False,06;,20000.0,06;,06;,06;,06;,06;,06;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+2;,5000.0,0.0,False,2;,20000.0,2;,2;,2;,2;,2;,2;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+26;,5000.0,0.0,False,26;,20000.0,26;,26;,26;,26;,26;,26;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+31;,5000.0,0.0,False,31;,20000.0,31;,31;,31;,31;,31;,31;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+51;,5000.0,0.0,False,51;,20000.0,51;,51;,51;,51;,51;,51;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+44;,5000.0,0.0,False,44;,20000.0,44;,44;,44;,44;,44;,44;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+35;,5000.0,0.0,False,35;,20000.0,35;,35;,35;,35;,35;,35;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+3;,5000.0,0.0,False,3;,20000.0,3;,3;,3;,3;,3;,3;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+07;,5000.0,0.0,False,07;,20000.0,07;,07;,07;,07;,07;,07;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+11;,5000.0,0.0,False,11;,20000.0,11;,11;,11;,11;,11;,11;,60,2,Quito,1,,,,0,0,False,3,1.0,17,VERDE,"Documentos incompletos o faltantes (+4 pts) | Beneficiario asociado a mas de 2 siniestros en la cartera (+5 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+25;,5000.0,0.0,False,25;,20000.0,25;,25;,25;,25;,25;,25;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+18;,5000.0,0.0,False,18;,20000.0,18;,18;,18;,18;,18;,18;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+12;,5000.0,0.0,False,12;,20000.0,12;,12;,12;,12;,12;,12;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+6;,5000.0,0.0,False,6;,20000.0,6;,6;,6;,6;,6;,6;,60,2,Quito,1,,,,0,0,False,2,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+56;,5000.0,0.0,False,56;,20000.0,56;,56;,56;,56;,56;,56;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+66;,5000.0,0.0,False,66;,20000.0,66;,66;,66;,66;,66;,66;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+21;,5000.0,0.0,False,21;,20000.0,21;,21;,21;,21;,21;,21;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+46;,5000.0,0.0,False,46;,20000.0,46;,46;,46;,46;,46;,46;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+86;,5000.0,0.0,False,86;,20000.0,86;,86;,86;,86;,86;,86;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+15;,5000.0,0.0,False,15;,20000.0,15;,15;,15;,15;,15;,15;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+21;,5000.0,0.0,False,21;,20000.0,21;,21;,21;,21;,21;,21;,60,2,Quito,1,,,,0,0,False,2,1.0,12,VERDE,"Documentos incompletos o faltantes (+4 pts) | Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
+33;,5000.0,0.0,False,33;,20000.0,33;,33;,33;,33;,33;,33;,60,2,Quito,1,,,,0,0,False,1,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+6;,5000.0,0.0,False,6;,20000.0,6;,6;,6;,6;,6;,6;,60,2,Quito,1,,,,0,0,False,2,0.0,4,VERDE,Documentos incompletos o faltantes (+4 pts),0.0,0
+,5000.0,0.0,True,P000,20000.0,Choque,Generales,Proveedor generico,Sin descripcion,,,60,2,Quito,0,,,,0,0,False,0,1.0,8,VERDE,"Narrativa muy similar a otro reclamo (100% similitud, +8 pts)",0.0,0
