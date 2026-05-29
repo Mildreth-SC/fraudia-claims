@@ -212,39 +212,37 @@ Implements 12 fraud detection rules:
 # Build Docker image
 docker build -t fraudia-api:latest .
 
-# Run container
+# Test locally
 docker run -p 8000:8000 \
   -e SUPABASE_URL="https://your-project.supabase.co" \
   -e SUPABASE_KEY="your-key" \
   fraudia-api:latest
 ```
 
-### Cloud Run Deployment
+### Railway Deployment (Recommended)
 
-#### Automatic (Recommended)
+Railway is a modern cloud platform with free tier - perfect for hackathons.
 
-```bash
-# Linux/Mac
-bash deploy.sh
+#### Quick Deploy
 
-# Windows
-deploy.bat
-```
+1. Push code to GitHub
+2. Go to https://railway.app
+3. Click "New Project" → "Deploy from GitHub"
+4. Select `fraudia-claims` repository
+5. Set environment variables:
+   - `SUPABASE_URL`
+   - `SUPABASE_KEY`
+6. Click "Deploy"
+7. Get public URL from "Networking" tab
 
-#### Manual
+#### Detailed Instructions
 
-```bash
-gcloud run deploy fraudia-api \
-  --source . \
-  --platform managed \
-  --region us-central1 \
-  --allow-unauthenticated \
-  --memory 2Gi \
-  --set-env-vars SUPABASE_URL=https://your-project.supabase.co \
-  --set-env-vars SUPABASE_KEY=your-key
-```
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+See [DEPLOYMENT_RAILWAY.md](DEPLOYMENT_RAILWAY.md) for complete guide including:
+- Step-by-step deployment
+- Environment setup
+- Troubleshooting
+- Monitoring
+- Custom domains
 
 ---
 

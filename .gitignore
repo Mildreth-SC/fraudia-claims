@@ -1,1 +1,56 @@
+# Environment
 .env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Test/Demo files (development only)
+test_*.py
+*_test.py
+*_demo.py
+verify_*.py
+tests/
+INICIAR_DEMO.bat
+instalar_demo.bat
+requirements-demo.txt
+run_backend.bat
+run_backend.sh
+run_frontend.bat
+setup.bat
+start_backend.bat
+deploy.bat
+deploy.sh
+
+# Temporary/Local
+*.log
+.DS_Store
+Thumbs.db
+temp/
+scratch/
+local_test/
+
+# Data (raw CSVs too large)
+data/raw/*.csv
+!data/raw/README.md
