@@ -1,80 +1,56 @@
 # 🚀 Guía Rápida - Cómo Ejecutar FraudIA
 
-## ⚙️ Requisitos Previos
+## ⚙️ Setup Inicial (Solo Primera Vez)
 
-Asegúrate de tener instalado:
-- ✅ **Python 3.12+** → https://www.python.org/downloads/
-- ✅ **Node.js 18+** → https://nodejs.org/
+**Paso 1: Cierra todas las PowerShell abiertas**
 
-## 🎯 Opción 1: Scripts Automáticos (Recomendado - Windows)
+**Paso 2: Abre PowerShell como Administrador**
+
+**Paso 3: Ejecuta setup:**
+```powershell
+cd c:\Users\guano\OneDrive\Documentos\Reto_aseguradora
+.\setup.bat
+```
+
+Este script:
+✓ Verifica Python 3.12+  
+✓ Instala todas las dependencias Python  
+✓ Instala todas las dependencias npm  
+
+**Espera a que termine y presiona Enter**
+
+---
+
+## 🎯 Ejecutar FraudIA (Después del Setup)
 
 ### Terminal 1 - Backend
 ```powershell
 cd c:\Users\guano\OneDrive\Documentos\Reto_aseguradora
-.\run_backend.bat
+.\start_backend.bat
 ```
 
 Deberías ver:
 ```
-Iniciando backend en http://127.0.0.1:8000
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Uvicorn running on http://127.0.0.1:8000
 ```
 
 ### Terminal 2 - Frontend
 ```powershell
-cd c:\Users\guano\OneDrive\Documentos\Reto_aseguradora
-.\run_frontend.bat
-```
-
-Deberías ver:
-```
-VITE v... ready in ... ms
-
-➜  Local:   http://127.0.0.1:3000/
-```
-
-## 🎯 Opción 2: Comandos Manuales (Si los scripts no funcionan)
-
-### Terminal 1 - Backend
-
-**Paso 1: Instalar dependencias**
-```bash
-cd c:\Users\guano\OneDrive\Documentos\Reto_aseguradora
-python -m pip install --upgrade pip
-python -m pip install fastapi uvicorn python-multipart pandas scikit-learn groq python-dotenv supabase-py
-```
-
-**Paso 2: Ejecutar servidor**
-```bash
-python src/app/main.py
-```
-
-### Terminal 2 - Frontend
-
-**Paso 1: Instalar dependencias npm**
-```bash
-cd frontend
-npm install
-```
-
-**Paso 2: Ejecutar servidor Vite**
-```bash
+cd c:\Users\guano\OneDrive\Documentos\Reto_aseguradora\frontend
 npm run dev
 ```
 
-## ✅ Verificación
+Deberías ver:
+```
+➜  Local:   http://127.0.0.1:3000/
+```
 
-### Backend funcionando:
+### Terminal 3 - Abrir navegador
 ```
-http://127.0.0.1:8000
+http://localhost:3000
 ```
-→ Deberías ver: `{"sistema":"FraudIA","version":"1.0.0","estado":"activo"}`
 
-### Frontend funcionando:
-```
-http://127.0.0.1:3000
-```
-→ Deberías ver: Pantalla de login
+---
 
 ## 🔐 Login
 
@@ -91,91 +67,60 @@ Usa cualquiera de estas credenciales:
 🔑 Demo2026
 ```
 
-## 📊 Gráficos
+---
 
-Una vez logueado, ve a **"Panel General"** para ver los 4 gráficos:
+## 📊 Ver Gráficos
 
-1. ✅ **Distribución por Riesgo** (DONUT)
-2. ✅ **Score por Ramo** (BARRAS)
-3. ✅ **Top Proveedores** (BARRAS HORIZONTALES)
-4. ✅ **Alertas por Ciudad** (BARRAS APILADAS)
-
-Los gráficos cargarán datos reales del endpoint `/casos?limit=1000`
-
-## 🐛 Solución de Problemas
-
-### Problema: "No module named 'fastapi'"
-
-**Solución:**
-```bash
-# Asegúrate de que estás usando la ruta correcta de Python
-python --version  # Debe mostrar 3.12+
-
-# Instala FastAPI explícitamente
-python -m pip install fastapi
-```
-
-### Problema: "npm: command not found"
-
-**Solución:**
-- Instala Node.js desde https://nodejs.org/
-- Reinicia la terminal
-- Verifica: `node --version` y `npm --version`
-
-### Problema: "Error cargando datos" en gráficos
-
-**Verificar:**
-1. ✅ Backend está corriendo (`http://127.0.0.1:8000` accesible)
-2. ✅ Endpoint `/casos` responde: `curl http://127.0.0.1:8000/casos -H "ngrok-skip-browser-warning: true"`
-3. ✅ Frontend conecta a URL correcta en `frontend/src/lib/fraudia-api.ts`
-
-### Problema: "Puerto 3000 ya está en uso"
-
-**Solución:**
-```bash
-# Cambia el puerto en vite.config.ts
-# O termina el proceso:
-netstat -ano | findstr :3000
-taskkill /PID <PID> /F
-```
-
-## 📝 Estructura de Carpetas
-
-```
-c:\Users\guano\OneDrive\Documentos\Reto_aseguradora\
-├── run_backend.bat       ← ✨ Ejecuta backend
-├── run_frontend.bat      ← ✨ Ejecuta frontend
-├── src/
-│   ├── app/main.py       ← Backend FastAPI
-│   └── analysis/
-│       └── data_cleaner.R
-├── frontend/
-│   ├── package.json
-│   ├── vite.config.ts
-│   └── src/
-│       ├── routes/
-│       │   ├── __root.tsx
-│       │   ├── index.tsx
-│       │   └── login.tsx
-│       └── components/fraudia/
-│           ├── Charts.tsx      ← ✨ Gráficos Recharts
-│           ├── Login.tsx
-│           └── ...
-└── requirements.txt
-```
-
-## 🎉 ¡Listo!
-
-Una vez que ambos servidores estén corriendo:
-1. Abre http://127.0.0.1:3000
-2. Ingresa con cualquier credencial de demo
-3. Navega a "Panel General"
-4. ¡Disfruta de los gráficos en tiempo real!
+Una vez logueado:
+1. Click en tab **"Panel General"**
+2. Verás 4 gráficos Recharts con datos reales:
+   - ✅ Distribución por Riesgo (DONUT)
+   - ✅ Score por Ramo (BARRAS)
+   - ✅ Top Proveedores (BARRAS HORIZONTALES)
+   - ✅ Alertas por Ciudad (BARRAS)
 
 ---
 
-**¿Aún hay problemas?** Asegúrate de:
-- ✓ Cierre todas las ventanas del terminal anterior
-- ✓ Abre PowerShell NUEVO como Administrador
-- ✓ Navega a la carpeta correcta
-- ✓ Ejecuta los scripts
+## ⚠️ Si el backend no funciona
+
+**Problema:** `No module named 'fastapi'`
+
+**Solución - Opción A (Manual):**
+```powershell
+# Abre PowerShell como Administrador
+$python = "$env:USERPROFILE\AppData\Local\Microsoft\WindowsApps\python3.12.exe"
+& $python -m pip install fastapi uvicorn python-multipart pandas scikit-learn groq python-dotenv supabase-py
+& $python c:\Users\guano\OneDrive\Documentos\Reto_aseguradora\src\app\main.py
+```
+
+**Solución - Opción B (Si nada funciona):**
+1. Desinstala Python completamente
+2. Instala desde: https://www.python.org/downloads/
+3. **IMPORTANTE**: Marca "Add Python to PATH" durante instalación
+4. Reinicia tu computadora
+5. Ejecuta `setup.bat` nuevamente
+
+---
+
+## 🎉 ¿Ya funciona?
+
+Deberías ver en el navegador:
+- Pantalla de login profesional
+- Después del login: Dashboard con gráficos
+- Datos actualizados en tiempo real
+
+**Listo! ✓**
+
+---
+
+## 📞 Soporte Rápido
+
+| Problema | Solución |
+|----------|----------|
+| "Python no encontrado" | Ejecuta `setup.bat` |
+| "No module named 'fastapi'" | Ejecuta `setup.bat` |
+| "npm not found" | Instala Node.js de nodejs.org |
+| "Puerto 3000 ocupado" | Cambia puerto en `vite.config.ts` |
+| "Error cargando datos" | Verifica backend está corriendo |
+
+
