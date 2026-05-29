@@ -153,6 +153,9 @@ function Index() {
     if (tab === "Analizar Dataset") {
       return <DataAnalyzer />;
     }
+    if (tab === "Agente IA") {
+      return <AiAgent />;
+    }
     return (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2">
